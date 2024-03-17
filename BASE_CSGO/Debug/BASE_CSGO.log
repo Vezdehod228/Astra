@@ -1,0 +1,23 @@
+﻿E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (BASE.vcxproj, RealityHook.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+cl : command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  Aimbot.cpp
+  CDraw.cpp
+  CMath.cpp
+  CValve.cpp
+  CWinsock.cpp
+  Config.cpp
+  Draw.cpp
+  Esp.cpp
+  Events.cpp
+  MD5.cpp
+  Netvars.cpp
+  NoSpread.cpp
+  Utils.cpp
+  checksum_crc.cpp
+  client.cpp
+  dllFunction.cpp
+  menu.cpp
+  mouse.cpp
+  Generating Code...
+  BASE_CSGO.vcxproj -> E:\Users\Evire1337\Desktop\Main\Sources c++\test source\Debug\Astra.dll

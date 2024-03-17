@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD2A035-36E7-45C3-9DA6-462F959C94C1}</ProjectGuid>
+    <RootNamespace>BASE_CSGO</RootNamespace>
+    <ProjectName>Astra</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Astra</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>Astra</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <MinimalRebuild>true</MinimalRebuild>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers />
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;c0gnito.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Aimbot.cpp" />
+    <ClCompile Include="CDraw.cpp" />
+    <ClCompile Include="Esp.cpp" />
+    <ClCompile Include="Events.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="CMath.cpp" />
+    <ClCompile Include="NoSpread.cpp" />
+    <ClCompile Include="CValve.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="CWinsock.cpp" />
+    <ClCompile Include="dllFunction.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="Netvars.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aimbot.h" />
+    <ClInclude Include="CBaseCombatWeapon.h" />
+    <ClInclude Include="CBaseEntity.h" />
+    <ClInclude Include="CDebugOverlay.h" />
+    <ClInclude Include="CDraw.h" />
+    <ClInclude Include="CEngineClient.h" />
+    <ClInclude Include="CEntityList.h" />
+    <ClInclude Include="Esp.h" />
+    <ClInclude Include="CGameEventManager.h" />
+    <ClInclude Include="CGameMovement.h" />
+    <ClInclude Include="CGlobalVars.h" />
+    <ClInclude Include="CInput.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="CMath.h" />
+    <ClInclude Include="CModelInfo.h" />
+    <ClInclude Include="CNoSpread.h" />
+    <ClInclude Include="ConVar.h" />
+    <ClInclude Include="CPrediction.h" />
+    <ClInclude Include="CTrace.h" />
+    <ClInclude Include="CValve.h" />
+    <ClInclude Include="CVARS.h" />
+    <ClInclude Include="CWinsock.h" />
+    <ClInclude Include="dllFunction.h" />
+    <ClInclude Include="ClientClass.h" />
+    <ClInclude Include="HLClient.h" />
+    <ClInclude Include="IGameEvent.h" />
+    <ClInclude Include="IGameEventListener2.h" />
+    <ClInclude Include="IGameEventManager.h" />
+    <ClInclude Include="IMoveHelper.h" />
+    <ClInclude Include="IPanel.h" />
+    <ClInclude Include="ISurface.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="mouse.h" />
+    <ClInclude Include="netvars.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="sdk.h" />
+    <ClInclude Include="xor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
