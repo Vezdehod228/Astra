@@ -98,7 +98,7 @@ void cGameEventManager::FireGameEvent(ValveSDK::IGameEvent *event)
 		Sleep(100);
 		if (Config.CvarList[RoundSay])
 		{
-			g_Valve.pEngine->ExecuteClientCmd("say Evvware alpha lol");
+			g_Valve.pEngine->ExecuteClientCmd("say Astra lol");
 		}
 	}
 }
