@@ -496,7 +496,7 @@ void cMenu::DrawMenu()
 	g_Draw.FillRGBA(m_x + 1, m_y + 2, m_w - 2, m_h - 2, 28, 28, 28, 255); //Main Menu
 	g_Draw.FillRGBA(m_x + 1, m_y + 2, m_w - 466, m_h - 2, 24, 24, 24, 255); //Tab Left Menu
 	g_Draw.FillRGBA(m_x + 1, m_y + 2, m_w - 2, m_h - 347, 22, 22, 22, 255);  //Tab Up Menu 
-	g_Draw.DrawStringA(g_Draw.NameCheatFont, false, m_x + 15, m_y + 8.5, 255,255,255,255, "Evvware");
+	g_Draw.DrawStringA(g_Draw.NameCheatFont, false, m_x + 15, m_y + 8.5, 255,255,255,255, "Astra");
 	g_Draw.DrawStringA(g_Draw.NameCheatFont, false, m_x + 490, m_y + 8.5, 31, 31, 31, 255, " Alpha v1.0"); //standard position x: m_x + 540, alpha user position x: m_x + 490
 
 	DrawTab(AIMBOT, iTabIndex, m_x - 35, m_y + 71, "Aimbot");
